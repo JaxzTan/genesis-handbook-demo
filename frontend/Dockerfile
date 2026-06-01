@@ -3,9 +3,11 @@ FROM node:20-alpine
 
 WORKDIR /app
 
-# Install dependencies first to leverage Docker layer caching
-COPY package.json package-lock.json ./
-RUN npm ci
+# Install dependencies first to leverage Docker layer caching.
+# The lockfile is optional (package-lock.json* won't fail if absent),
+# so use `npm install` rather than `npm ci`, which requires a lockfile.
+COPY package.json package-lock.json* ./
+RUN npm install
 
 # Copy the rest of the application source
 COPY . .
