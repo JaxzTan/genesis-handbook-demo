@@ -60,7 +60,7 @@ Topics evolve each year based on what contributors surface. Year 1 — shaped by
 
 ## Join the Build
 
-All contribution tasks live in our Discord. Pick what you want to work on, submit when you're ready. Filtering happens at submission review, not at entry.
+All contribution tasks live in our Website. Pick what you want to work on, submit when you're ready. Filtering happens at submission review, not at entry.
 
 **Step one — ([genesis_handbook](https://genesis-handbook.online/)).**
 
