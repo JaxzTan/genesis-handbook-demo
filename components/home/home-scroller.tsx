@@ -41,6 +41,8 @@ export function HomeScroller({ stats, contributors }: Props) {
           entry.target
             .querySelectorAll(".fade-up")
             .forEach((el) => el.classList.add("visible"));
+          // Latch on once: the counters animate the first time slide 4 enters
+          // view and intentionally don't replay on subsequent scroll-backs.
           if (id === "4") setCountersActive(true);
         }
       },

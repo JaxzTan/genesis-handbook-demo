@@ -62,7 +62,7 @@ export function CtaSlide() {
               <a
                 href={DISCORD_INVITE}
                 target="_blank"
-                rel="noopener"
+                rel="noopener noreferrer"
                 className="cta-discord-btn inline-flex items-center gap-2.5 px-[22px] py-3 bg-white text-g-accent text-[13px] font-semibold no-underline transition-all duration-200"
               >
                 <svg className="w-4 h-4" viewBox="0 0 24 24" fill="currentColor">

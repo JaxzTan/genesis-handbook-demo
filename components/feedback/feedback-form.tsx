@@ -58,10 +58,10 @@ export function FeedbackForm() {
       className="border border-g-rule bg-white px-8 py-9 flex flex-col gap-7"
     >
       {/* Rating */}
-      <div className="flex flex-col gap-3">
-        <label className="font-mono text-[9px] tracking-[0.16em] uppercase text-g-mid">
+      <fieldset className="flex flex-col gap-3 border-0 p-0 m-0">
+        <legend className="font-mono text-[9px] tracking-[0.16em] uppercase text-g-mid p-0">
           How was your experience? (optional)
-        </label>
+        </legend>
         <div className="flex gap-2">
           {RATINGS.map((n) => (
             <button
@@ -80,7 +80,7 @@ export function FeedbackForm() {
             </button>
           ))}
         </div>
-      </div>
+      </fieldset>
 
       {/* Name + email */}
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">

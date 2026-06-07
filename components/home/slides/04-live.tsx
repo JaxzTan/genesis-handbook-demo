@@ -116,7 +116,7 @@ export function LiveSlide({ stats, contributors, countersActive }: Props) {
             <a
               href={CONTRIBUTE_URL}
               target="_blank"
-              rel="noopener"
+              rel="noopener noreferrer"
               className="text-g-accent no-underline font-medium hover:underline"
             >
               Add yours →

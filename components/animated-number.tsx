@@ -30,7 +30,12 @@ export function AnimatedNumber({
       if (t < 1) raf = requestAnimationFrame(tick);
     }
     raf = requestAnimationFrame(tick);
-    return () => cancelAnimationFrame(raf);
+    return () => {
+      cancelAnimationFrame(raf);
+      // Reset so the animation can replay if the effect re-runs (e.g. React
+      // Strict Mode's dev double-invoke, or a later `target` change).
+      started.current = false;
+    };
   }, [active, target, durationMs]);
 
   return <span className={className}>{value}</span>;
